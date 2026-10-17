@@ -51,13 +51,13 @@ npm run preview
 
 El workflow sube el build a la rama `gh-pages`. Cada push a `main` vuelve a desplegar.
 
-**URL:** https://programacioncompetitivaufps.github.io/BoardNocturnas/
+**URL:** https://imjgtorres.github.io/BoardNocturnas2026-II/
 
 ### Activar Pages (obligatorio la primera vez)
 
 El error `Failed to create deployment (status: 404)` aparece si **Pages no está activado** en el repo.
 
-1. Abre [Settings → Pages](https://github.com/ProgramacionCompetitivaUFPS/BoardNocturnas/settings/pages).
+1. Abre [Settings → Pages](https://github.com/ImJGTorres/BoardNocturnas2026-II/settings/pages).
 2. En **Build and deployment → Source**, elige **Deploy from a branch**.
 3. **Branch:** `gh-pages` · **Folder:** `/ (root)` · Guardar.
 4. Ejecuta el workflow: **Actions → Deploy to GitHub Pages → Run workflow** (o haz un push a `main`).
