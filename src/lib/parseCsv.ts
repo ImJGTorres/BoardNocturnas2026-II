@@ -28,7 +28,9 @@ export function parseCsv(content: string): Omit<TeamEntry, 'rank'>[] {
   const delimiter = detectDelimiter(lines[0])
   const headers = lines[0].split(delimiter).map(normalizeHeader)
 
-  const teamIdx = headers.findIndex((h) => h === 'team' || h === 'equipo')
+  const teamIdx = headers.findIndex(
+    (h) => h === 'team' || h === 'equipo' || h === 'competidor',
+  )
   const scoreIdx = headers.findIndex((h) => h === 'score' || h === 'puntos' || h === 'pts')
   const penaltyIdx = headers.findIndex(
     (h) => h === 'penalty' || h === 'penalizacion' || h === 'penalización',

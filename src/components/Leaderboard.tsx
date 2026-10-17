@@ -32,7 +32,7 @@ export function Leaderboard({
           <thead>
             <tr>
               <th>#</th>
-              <th>Equipo</th>
+              <th>Competidor</th>
               <th>Puntos</th>
               <th>Penalización</th>
             </tr>
